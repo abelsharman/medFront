@@ -18,7 +18,7 @@
           </div>
 
 
-          <p class="login_create">Нет учетной записи? <span>Создайте аккаунт</span> и пользуйтесь нашей системой. </p>
+          <p class="login_create">Нет учетной записи? <router-link to="/register">Создайте аккаунт</router-link> и пользуйтесь нашей системой. </p>
         </div>
     </div>
 
@@ -242,7 +242,7 @@ body
           width: calc(100% - 0.8vw)
           border: 0px
           background: #FFFFFF
-          box-shadow: 0px 4px 4px rgba(51, 51, 51, 0.04), 0px 4px 24px rgba(51, 51, 51, 0.24)
+          box-shadow: 0px 4px 4px rgba(51, 51, 51, 0.04), 0px 4px 16px rgba(51, 51, 51, 0.08)
           border-radius: 4px
           height: 4vw
           outline: none
@@ -250,8 +250,7 @@ body
           font-size: 0.9770833333333334vw
           padding: 0
           padding-left: 0.8vw
-        input[type="password"]
-          box-shadow: 0px 4px 4px rgba(51, 51, 51, 0.04), 0px 4px 16px rgba(51, 51, 51, 0.08)
+          transition: box-shadow 0.5s ease
         input::placeholder
           font-weight: normal
           font-size: 0.6770833333333334vw
@@ -262,6 +261,7 @@ body
           user-select: none
           transition: top 0.5s ease
         input:focus
+            box-shadow: 0px 4px 4px rgba(51, 51, 51, 0.04), 0px 4px 24px rgba(51, 51, 51, 0.24)
             &::placeholder
               top: -1.4vw
         button
@@ -273,7 +273,7 @@ body
           background: #437FD7
           border-radius: 4px
           outline: none
-          padding: 1.5vw 0
+          padding: 1.2vw 0
           font-weight: 600
           font-size: 0.9375vw
           margin-top: 1.0416666666666665vw
@@ -297,7 +297,7 @@ body
           color: #437FD7
           cursor: pointer
         .login_checkbox_right
-          padding-top: 20px
+          padding-top: 23px
           float: right
 
 
@@ -347,6 +347,7 @@ body
             width: 8vw
             border: 0px
             padding-left: 2.2vw
+            padding-top: 2px
             font-weight: normal
             font-size: 0.8333333333333334vw //16px
             line-height: 1.25vw //24px
@@ -363,8 +364,9 @@ body
         font-weight: normal
         line-height: 1.25vw //24px
         padding-top: 22vh
-        span
+        a
           color: rgb(235,87,87)
+          text-decoration: none
 
 
 
