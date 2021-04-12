@@ -1,12 +1,33 @@
 <template>
   <div id="app">
-    <router-view/>
+    <Header></Header>
+    <div class="flex">
+      <SideBar></SideBar>
+      <router-view/>
+    </div>
   </div>
 </template>
-
-<style>
+<script>
+import Header from "@/components/Header";
+import SideBar from "@/components/SideBar";
+export default {
+  name: "app",
+  components: {
+    SideBar,
+    Header,
+  }
+}
+</script>
+<style lang="scss">
 #app {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: Proxima Nova, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+}
+a{
+  text-decoration: none !important;
+}
+.flex{
+  display: flex;
 }
 </style>
