@@ -12,7 +12,7 @@
           <input type="password" name="" value="" placeholder="Пароль">
           <p>Подтвердите пароль</p>
           <input type="password" name="" value="" placeholder="Подтвердите пароль">
-          <button>Зарегистрироваться</button>
+          <router-link to="/main"><button>Зарегистрироваться</button></router-link>
         
 
         
@@ -225,7 +225,7 @@ body
       padding-left: 16vw
       img
         margin-left: 11.5vw
-        margin-top: 19vh
+        margin-top: 17vh
         width: 4vw
         user-select: none
       h1

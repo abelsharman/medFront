@@ -7,7 +7,7 @@
           <input type="mail" name="" value="" placeholder="Почта">
           <p>Пароль</p>
           <input type="password" name="" value="" placeholder="Пароль">
-          <button>Войти</button>
+          <router-link to="/main"><button>Войти</button></router-link>
           
           <div class="login_checkbox">
             <label class="login_checkbox_label"><span class="login_checkbox_text">Запомнить меня</span>
