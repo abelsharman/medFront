@@ -105,8 +105,13 @@ export default {
   height: 100vh;
   padding-top: 70px;
     .item {
+      font-family: Proxima Nova, sans-serif;
+      font-style: normal;
+      font-weight: normal;
       font-size: 20px;
-      text-align: center;
+      line-height: 24px;
+
+      color: #437FD7;
       >div{
         .li{
           display: flex;
@@ -126,7 +131,8 @@ export default {
         }
         .li:hover{
           background: rgba(67, 127, 215, 0.2);
-          width: 275px;
+          width: 270px;
+          border-left: 5px solid rgba(67, 127, 215, 0.0);
         }
         .li-active{
           border-left: 5px solid #437FD7 !important;
