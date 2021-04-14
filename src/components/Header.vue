@@ -10,7 +10,7 @@
           <input type="text" placeholder="Search" class="search_form">
         </div>
         <button class="notification">
-          <img src="../assets/images/notifications.png" alt="">
+          <img src="../assets/images/ic_twotone-notifications-none.svg" alt="">
           <span class="notification_num">47</span>
         </button>
       </div>
@@ -51,14 +51,16 @@ name: "Header"
       align-items: center;
       .search_input{
         margin: 0 37px 0 20px;
-        height: 30px;
-        width: 258px;
         >img {
           position: absolute;
-          padding: 7.07px 14.5px;
+          width: 10px;
+          height: 10px;
+          padding: 11.07px 14.5px;
         }
         >input{
           background: #FFFFFF;
+          height: 22px;
+          width: 214px;
           /* Shadow */
 
           box-shadow: 0px 4px 4px rgba(51, 51, 51, 0.04), 0px 4px 16px rgba(51, 51, 51, 0.08);
@@ -67,12 +69,28 @@ name: "Header"
           outline: none;
           padding: 4px 44px;
         }
+        >input::placeholder{
+          font-family: Roboto, sans-serif;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 12px;
+          line-height: 24px;
+          /* identical to box height, or 200% */
+
+          display: flex;
+          align-items: center;
+
+          /* Colors / Gray */
+
+          color: rgba(17, 17, 17, 0.48);
+        }
       }
       .notification{
         border: none;
         background: transparent;
         outline: none;
         cursor: pointer;
+        padding: 0;
         >span {
           width: 35px;
           height: 13px;
