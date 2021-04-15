@@ -23,6 +23,11 @@ const routes = [
     name: 'Main',
     component: Main,
   },
+  {
+    path: '/personal',
+    name: 'Personal',
+    component: () => import('../components/Personal.vue')
+  }
 ]
 
 const router = new VueRouter({
