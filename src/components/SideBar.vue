@@ -2,10 +2,10 @@
   <div class="sidebar">
     <div class="item" v-for="(item,index) in items" :key="index">
       <div @click="isSelect(index)">
-        <router-link class="li" :class="{'li-active': item.isSelected}" :to="item.to">
+        <div class="li" :class="{'li-active': item.isSelected}" @click="selectNav(item.to)" >
           <img :src="item.icon" alt="">
           <span>{{item.title}}</span>
-        </router-link>
+        </div>
       </div>
     </div>
   </div>
@@ -19,67 +19,67 @@ export default {
       items: [
         {
           title: "Профиль",
-          to: "/profile",
+          to: "0",
           icon: require("../assets/images/profile.png"),
           isSelected: true,
         },
         {
           title: "Главная",
-          to: "/",
+          to: "1",
           icon: require("../assets/images/main.png"),
           isSelected: false,
         },
         {
           title: "Персонал",
-          to: "/personal",
+          to: "2",
           icon: require("../assets/images/personal.png"),
           isSelected: false,
         },
         {
           title: "Статистика",
-          to: "/statistics",
+          to: 3,
           icon: require("../assets/images/statistics.png"),
           isSelected: false,
         },
         {
           title: "Журнал",
-          to: "/journal",
+          to: "4",
           icon: require("../assets/images/journal.png"),
           isSelected: false,
         },
         {
           title: "Клиенты",
-          to: "/clients",
+          to: "5",
           icon: require("../assets/images/clients.png"),
           isSelected: false,
         },
         {
           title: "Услуги",
-          to: "/services",
+          to: "6",
           icon: require("../assets/images/services.png"),
           isSelected: false,
         },
         {
           title: "Финансы",
-          to: "/finance",
+          to: "7",
           icon: require("../assets/images/finance.png"),
           isSelected: false,
         },
         {
           title: "Ивенты",
-          to: "/events",
+          to: "8",
           icon: require("../assets/images/event.png"),
           isSelected: false,
         },
         {
           title: "Настройки",
-          to: "/settings",
+          to: "9",
           icon: require("../assets/images/settings.png"),
           isSelected: false,
         },
         {
           title: "Выйти",
-          to: "/login",
+          to: "/logout",
           icon: require("../assets/images/logout.png"),
 
         },
@@ -92,6 +92,9 @@ export default {
         this.items[i].isSelected = false;
       }
       this.items[i].isSelected = true;
+    },
+    selectNav(i){
+      this.$store.state.navItem = i
     }
   }
 }

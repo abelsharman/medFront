@@ -1,7 +1,7 @@
 <template>
   <div class="doctor_list">
     <div class="list">
-      <div class="vfor" v-for="(c,i) in cards">
+      <div class="vfor" v-for="(c,i) in cards" :key="i">
         <div class="card">
           <img src="../assets/images/Userprofile.png" alt="">
           <div class="userinfo">

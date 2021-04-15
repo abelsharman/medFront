@@ -3,6 +3,8 @@
     <Header></Header>
     <div class="flex">
       <SideBar></SideBar>
+
+      <Personal v-show="itemNav == 2"/>
       <router-view/>
     </div>
   </div>
@@ -10,12 +12,20 @@
 <script>
 import Header from "@/components/Header";
 import SideBar from "@/components/SideBar";
+import Personal from "@/components/Personal";
+
 export default {
   name: "Main",
   components: {
     SideBar,
     Header,
-  }
+    Personal,
+  },
+  computed:{
+    itemNav(){
+      return this.$store.state.navItem
+    }
+  },
 }
 </script>
 <style lang="scss">
