@@ -2,10 +2,10 @@
   <div class="sidebar">
     <div class="item" v-for="(item,index) in items" :key="index">
       <div @click="isSelect(index)">
-        <div class="li" :class="{'li-active': item.isSelected}" @click="selectNav(item.to)" >
+        <router-link class="li" :class="{'li-active': item.isSelected}" :to="item.to">
           <img :src="item.icon" alt="">
           <span>{{item.title}}</span>
-        </div>
+        </router-link>
       </div>
     </div>
   </div>
@@ -19,67 +19,67 @@ export default {
       items: [
         {
           title: "Профиль",
-          to: "0",
+          to: "/profile",
           icon: require("../assets/images/profile.png"),
           isSelected: true,
         },
         {
           title: "Главная",
-          to: "1",
+          to: "/",
           icon: require("../assets/images/main.png"),
           isSelected: false,
         },
         {
           title: "Персонал",
-          to: "2",
+          to: "/personal",
           icon: require("../assets/images/personal.png"),
           isSelected: false,
         },
         {
           title: "Статистика",
-          to: 3,
+          to: "/statistics",
           icon: require("../assets/images/statistics.png"),
           isSelected: false,
         },
         {
           title: "Журнал",
-          to: "4",
+          to: "/journal",
           icon: require("../assets/images/journal.png"),
           isSelected: false,
         },
         {
           title: "Клиенты",
-          to: "5",
+          to: "/clients",
           icon: require("../assets/images/clients.png"),
           isSelected: false,
         },
         {
           title: "Услуги",
-          to: "6",
+          to: "/services",
           icon: require("../assets/images/services.png"),
           isSelected: false,
         },
         {
           title: "Финансы",
-          to: "7",
+          to: "/finance",
           icon: require("../assets/images/finance.png"),
           isSelected: false,
         },
         {
           title: "Ивенты",
-          to: "8",
+          to: "/events",
           icon: require("../assets/images/event.png"),
           isSelected: false,
         },
         {
           title: "Настройки",
-          to: "9",
+          to: "/settings",
           icon: require("../assets/images/settings.png"),
           isSelected: false,
         },
         {
           title: "Выйти",
-          to: "/logout",
+          to: "/login",
           icon: require("../assets/images/logout.png"),
 
         },
@@ -92,9 +92,6 @@ export default {
         this.items[i].isSelected = false;
       }
       this.items[i].isSelected = true;
-    },
-    selectNav(i){
-      this.$store.state.navItem = i
     }
   }
 }
@@ -102,23 +99,23 @@ export default {
 
 <style scoped lang="scss">
 .sidebar{
-  width: 275px;
+  background: #ffffff;
+  width: 14.322916666666666VW;
   display: flex;
   flex-flow: column;
   height: 100vh;
-  padding-top: 70px;
+  padding-top: 3.6458333333333335VW;
     .item {
       font-family: Proxima Nova, sans-serif;
       font-style: normal;
       font-weight: normal;
-      font-size: 20px;
+      font-size: 1.0416666666666665VW;
       line-height: 24px;
-
       color: #437FD7;
       >div{
         .li{
           display: flex;
-          width: 270px;
+          width: 14.0625VW;
           align-items: center;
           float: right;
           height: 40px;
@@ -134,7 +131,7 @@ export default {
         }
         .li:hover{
           background: rgba(67, 127, 215, 0.2);
-          width: 270px;
+          width: 14.0625VW;
           border-left: 5px solid rgba(67, 127, 215, 0.0);
         }
         .li-active{
