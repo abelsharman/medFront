@@ -32,25 +32,16 @@ name: "Personal",
 </script>
 
 <style scoped lang="sass">
-@keyframes appearingBlock 
-  0%
-    opacity: 0
-  50%
-    opacity: 0.5
-  100%
-    opacity: 1
-  
 
 .container
   padding-bottom: 53px
   width: 100%
   margin-left: 20px
-  animation: 0.5s appearingBlock
   .pagename
     font-family: Proxima Nova, sans-serif
     font-style: normal
     font-weight: 600
-    font-size: 24px
+    font-size: 1.25VW
     line-height: 29px
     display: flex
     align-items: center
@@ -58,11 +49,11 @@ name: "Personal",
   .subheader
     display: flex
     justify-content: space-between
-    padding-right: 4.458333333333335VW
+    padding-right: 4.733333333333332VW
     .road
       font-style: normal
       font-weight: 600
-      font-size: 16px
+      font-size: 0.8333333333333334VW
       line-height: 19px
       display: flex
       align-items: center
@@ -74,7 +65,7 @@ name: "Personal",
         color: #437FD7
         font-style: normal
         font-weight: 600
-        font-size: 16px
+        font-size: 0.8333333333333334VW
         line-height: 19px
     .create
       display: flex
@@ -87,10 +78,11 @@ name: "Personal",
       border: none
       font-style: normal
       font-weight: 600
-      font-size: 14px
+      font-size: 0.7291666666666666VW
       line-height: 17px
       color: #437FD7
       img
+        width: 0.78125VW
         margin-right: 10.05px
 
   .sub_container
