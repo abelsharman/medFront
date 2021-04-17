@@ -1,7 +1,7 @@
 <template>
   <div class="doctor_list">
     <div class="list">
-      <div class="vfor" v-for="(c,i) in cards" :key="i">
+      <div class="vfor" v-for="(c,i) in cards">
         <div class="card">
           <img src="../assets/images/Userprofile.png" alt="">
           <div class="userinfo">
@@ -106,7 +106,7 @@ export default {
       flex-wrap: wrap
       .vfor
         .card
-          width: 17.322917VW
+          width: 18.052083333333336VW
           position: relative
           height: 6.508333333333334VW
           background: #FFFFFF
