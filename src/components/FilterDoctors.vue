@@ -1,5 +1,5 @@
 <template>
-    <div class="filter_doctors">
+  <div class="filter_doctors">
     <p class="title">
       <img src="../assets/images/settings.svg" alt="">
       Фильтры
@@ -41,43 +41,43 @@
 
     </div>
     <p class="title title_of_p ">Отдел</p>
-      <div class="c_btn">
-        <input type="radio" id="cardio" name="personal_otdel" value="all">
-        <label for="cardio"><span>Кардиология</span> </label><br>
+    <div class="c_btn">
+      <input type="radio" id="cardio" name="personal_otdel" value="all">
+      <label for="cardio"><span>Кардиология</span> </label><br>
 
 
-        <input type="radio" id="ginecolog" name="personal_otdel" value="doctors">
-        <label for="ginecolog"><span>Гинекология</span></label><br>
+      <input type="radio" id="ginecolog" name="personal_otdel" value="doctors">
+      <label for="ginecolog"><span>Гинекология</span></label><br>
 
 
-        <input type="radio" id="trambo" name="personal_otdel" value="state">
-        <label for="trambo"><span>Травмотология</span></label><br>
+      <input type="radio" id="trambo" name="personal_otdel" value="state">
+      <label for="trambo"><span>Травмотология</span></label><br>
 
-        <input type="radio" id="xirurg" name="personal_otdel" value="state">
-        <label for="xirurg"><span>Хирургия</span></label><br>
+      <input type="radio" id="xirurg" name="personal_otdel" value="state">
+      <label for="xirurg"><span>Хирургия</span></label><br>
 
-        <input type="radio" id="uxo" name="personal_otdel" value="state">
-        <label for="uxo"><span>Ухо, горло, нос</span></label>
+      <input type="radio" id="uxo" name="personal_otdel" value="state">
+      <label for="uxo"><span>Ухо, горло, нос</span></label>
+    </div>
+    <p class="clear ewe">Ещё 15 <img src="../assets/images/arrow-right(gray).svg" alt=""></p>
+
+    <p class="title title_of_p ">По дате добавления</p>
+    <div class="date">
+      <div class="from_date">
+        <p class="title title_of_p ">C</p>
+        <div class="date_btn">Любая дата</div>
       </div>
-      <p class="clear ewe">Ещё 15 <img src="../assets/images/arrow-right(gray).svg" alt=""></p>
-
-      <p class="title title_of_p ">По дате добавления</p>
-      <div class="date">
-        <div class="from_date">
-          <p class="title title_of_p ">C</p>
-          <div class="date_btn">Любая дата</div>
-        </div>
-        <div class="to_date">
-          <p class="title title_of_p ">По</p>
-          <div class="date_btn">Любая дата</div>
-        </div>
-      </div>
-
-      <div class="footer_btns">
-        <button class="apply">Применить</button>
-        <button class="reset">Сбросить</button>
+      <div class="to_date">
+        <p class="title title_of_p ">По</p>
+        <div class="date_btn">Любая дата</div>
       </div>
     </div>
+
+    <div class="footer_btns">
+      <button class="apply">Применить</button>
+      <button class="reset">Сбросить</button>
+    </div>
+  </div>
 </template>
 
 <script>

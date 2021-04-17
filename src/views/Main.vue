@@ -3,7 +3,6 @@
     <Header></Header>
     <div class="flex">
       <SideBar></SideBar>
-
       <Personal v-show="itemNav == 2"/>
       <router-view/>
     </div>

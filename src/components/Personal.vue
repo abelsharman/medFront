@@ -26,16 +26,24 @@
 import FilterDoctors from "@/components/FilterDoctors";
 import DoctorList from "@/components/DoctorList";
 export default {
-name: "Personal",
+  name: "Personal",
   components: {DoctorList, FilterDoctors}
 }
 </script>
 
 <style scoped lang="sass">
+@keyframes appearingBlock
+  0%
+    opacity: 0
+  50%
+    opacity: 0.5
+  100%
+    opacity: 1
 
 .container
   padding-bottom: 53px
   width: 100%
+  animation: 0.5s appearingBlock
   margin-left: 20px
   .pagename
     font-family: Proxima Nova, sans-serif
@@ -86,7 +94,7 @@ name: "Personal",
         margin-right: 10.05px
 
   .sub_container
-    padding-top: 30px
+    padding-top: 1.5625VW
     display: flex
 
 </style>
