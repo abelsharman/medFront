@@ -17,7 +17,7 @@ const routes = [
     }
   },
   {
-    path: '/register',
+    path: '',
     name: 'Register',
     component: Register,
     meta:{
@@ -33,7 +33,7 @@ const routes = [
     }
   },
   {
-    path: '/personal',
+    path:'',
     name: 'Personal',
     meta:{
       title: "Med - персонал"
