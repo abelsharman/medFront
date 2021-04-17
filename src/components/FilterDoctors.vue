@@ -89,7 +89,7 @@ export default {
 <style scoped lang="sass">
 .filter_doctors
   padding: 1.0416666666666665VW 1.0416666666666665VW 2.083333333333333VW 1.0416666666666665VW
-  width: 11.458333333333332VW
+  width: 13.020833333333334VW
   height: 100%
   background: #FFFFFF
   box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.1)
