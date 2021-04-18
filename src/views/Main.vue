@@ -5,6 +5,7 @@
       <SideBar></SideBar>
 
       <Personal v-show="itemNav == 2"/>
+      <Clients v-show="itemNav == 5" />
       <router-view/>
     </div>
   </div>
@@ -13,6 +14,7 @@
 import Header from "@/components/Header";
 import SideBar from "@/components/SideBar";
 import Personal from "@/components/Personal";
+import Clients from "@/components/Clients";
 
 export default {
   name: "Main",
@@ -20,6 +22,7 @@ export default {
     SideBar,
     Header,
     Personal,
+    Clients,
   },
   computed:{
     itemNav(){
