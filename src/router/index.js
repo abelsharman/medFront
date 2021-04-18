@@ -40,6 +40,14 @@ const routes = [
     },
     component: () => import('../components/Personal.vue')
   },
+  {
+    path:'',
+    name: 'Clients',
+    meta:{
+      title: "Med - клиенты"
+    },
+    component: () => import('../components/Clients.vue')
+  },
 
 ]
 
