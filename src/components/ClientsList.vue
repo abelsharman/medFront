@@ -13,7 +13,7 @@
           </tr>
 
           <tr :class="{'isChecked': c.isChecked}" v-for="(c,i) in clients" :key="i">
-            <td><input @click="isChecked()" :value="i" v-model="c.isChecked" :v-model="checkedClients" type="checkbox"></td>
+            <td><input @click="isChecked()" :value="i" v-model="c.isChecked" :v-model="c.checked" type="checkbox"></td>
             <td>{{ c.clientname }}</td>
             <td>{{ c.phone }}</td>
             <td>{{ c.email }}</td>
@@ -22,7 +22,6 @@
           </tr>
         </table>
       </div>
-      {{ checkedClients }}
       <div class="selected_modal" v-show="this.checkedClients.length !== 0">
         <div class="modal_cont">
           <p>Выбрано</p>
@@ -152,6 +151,9 @@ export default {
     },
     close(){
       this.checkedClients = []
+      for (let i =0; i<this.clients.length;i++){
+        this.clients[i].isChecked = false
+      }
       console.log(this.checkedClients.length)
     },
     checkAll(){
