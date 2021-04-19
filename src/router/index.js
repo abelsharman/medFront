@@ -32,22 +32,6 @@ const routes = [
       title: "Med - главная"
     }
   },
-  {
-    path:'',
-    name: 'Personal',
-    meta:{
-      title: "Med - персонал"
-    },
-    component: () => import('../components/Personal.vue')
-  },
-  {
-    path:'',
-    name: 'Clients',
-    meta:{
-      title: "Med - клиенты"
-    },
-    component: () => import('../components/Clients.vue')
-  },
 
 ]
 
