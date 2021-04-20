@@ -108,6 +108,7 @@ export default {
   flex-flow: column;
   height: 100vh;
   padding-top: 3.6458333333333335VW;
+  filter: drop-shadow(3px 4px 25px rgba(0, 0, 0, 0.1));
   .item {
     font-family: Proxima Nova, sans-serif;
     font-style: normal;
@@ -126,7 +127,7 @@ export default {
         >img{
           width: 16.67px;
           height: 16.67px;
-          padding: 0 22px 0 27px;
+          padding: 0 15px 0 20px;
         }
         >span{
           color: #437FD7 !important;
