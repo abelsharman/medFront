@@ -8,7 +8,7 @@
         <span class="to">Персонал</span>
       </p>
 
-      <button class="create">
+      <button class="create" @click="selectNav('new-personal')">
         <img src="../assets/images/create.svg" alt="">
         Добавить
       </button>
@@ -27,7 +27,12 @@ import FilterDoctors from "@/components/FilterDoctors";
 import DoctorList from "@/components/DoctorList";
 export default {
   name: "Personal",
-  components: {DoctorList, FilterDoctors}
+  components: {DoctorList, FilterDoctors},
+  methods: {
+    selectNav(){
+      this.$store.state.navItem = 'new-personal'
+    }
+  }
 }
 </script>
 
