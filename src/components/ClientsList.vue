@@ -13,7 +13,7 @@
           </tr>
 
           <tr :class="{'isChecked': c.isChecked}" v-for="(c,i) in clients" :key="i">
-            <td><input @click="isChecked()" :value="i" v-model="c.isChecked" :v-model="c.checked" type="checkbox"></td>
+            <td><input :value="i" @click="isChecked(i)" :v-model="checkedClients" type="checkbox"></td>
             <td>{{ c.clientname }}</td>
             <td>{{ c.phone }}</td>
             <td>{{ c.email }}</td>
@@ -141,13 +141,12 @@ export default {
     }
   },
   methods: {
-    isChecked(){
-      for(let i = 0; i<this.clients.length; i++){
-        if(this.clients[i].isChecked === true){
-          this.checkedClients.push(this.clients[i])
-        }
+    isChecked(i){
+      this.checkedClients.push(this.clients[i]);
+      this.clients[i].isChecked = !this.clients[i].isChecked;
+      if(this.clients[i].isChecked === false){
+        this.checkedClients.pop(this.clients[i])
       }
-
     },
     close(){
       this.checkedClients = []
@@ -155,9 +154,6 @@ export default {
         this.clients[i].isChecked = false
       }
       console.log(this.checkedClients.length)
-    },
-    checkAll(){
-
     },
     toggleSelect: function() {
       const select = this.selectAll;
