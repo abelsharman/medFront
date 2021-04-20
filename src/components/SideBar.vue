@@ -4,7 +4,7 @@
       <div @click="isSelect(index)">
         <div class="li" :class="{'li-active': item.isSelected}" @click="selectNav(item.to)" >
           <img :src="item.icon" alt="">
-          <span>{{item.title}}</span>
+          <span v-bind:style="{color: changeColor}">{{item.title}}</span>
         </div>
       </div>
     </div>
@@ -86,6 +86,11 @@ export default {
       ]
     }
   },
+  computed:{
+    changeColor(){
+      return this.$store.state.color
+    }
+  },
   methods: {
     isSelect(i){
       for(let i=0; i<this.items.length; i++){
@@ -130,7 +135,8 @@ export default {
           padding: 0 15px 0 20px;
         }
         >span{
-          color: #437FD7 !important;
+          color: #437FD7;
+          transition: 0.5s all ease;
           text-decoration: none !important;
         }
       }

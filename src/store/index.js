@@ -6,7 +6,12 @@ Vue.use(Vuex)
 export default new Vuex.Store({
   state: {
     navItem: 0,
-    color: 0,
+    exchange: 'tenge',
+    dateFormat: 'point',
+    timeFormat: '24',
+    timezone: 'azia',
+    color: '#437FD7',
+
   },
   mutations: {
   },

@@ -1,5 +1,5 @@
 <template>
-  <div class="header">
+  <div class="header" v-bind:style="{backgroundColor: changeColor}">
     <div class="cont1">
       <img src="../assets/images/logo.png" alt="">
     </div>
@@ -27,7 +27,16 @@
 
 <script>
 export default {
-  name: "Header"
+  name: "Header",
+  data(){
+    return {
+    }
+  },
+  computed:{
+    changeColor(){
+      return this.$store.state.color
+    }
+  }
 }
 </script>
 
@@ -36,6 +45,7 @@ export default {
   background-color: #437FD7;
   height: 4.166666666666666VW;
   display: flex;
+  transition: 0.5s all ease;
   .cont1{
     width: 14.322916666666666VW;
     display: flex;
