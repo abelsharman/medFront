@@ -70,7 +70,7 @@
         </div>
 
         <div class="setting_block_3" v-show="i == 3">
-            <h1>жопа</h1>
+            <h1>права</h1>
         </div>
 
 
