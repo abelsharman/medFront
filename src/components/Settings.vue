@@ -50,8 +50,8 @@
             <p v-bind:style="{color: color}">Тема</p>
             <select v-model="color" @change="changeOption">
                 <option value="#437FD7">Синий</option>
-                <option value="#a000a0">Фиолетовый</option>
-                <option value="#F4A460">Оранжевый</option>
+                <option value="#8A3FFC">Фиолетовый</option>
+                <option value="#FFB3B8">Розовый</option>
             </select>
 
             <div class="setting_block_1_color" v-bind:style="{backgroundColor: color}"></div>
@@ -59,7 +59,14 @@
         </div>
 
         <div class="setting_block_2" v-show="i == 2">
-            <h1>хуй</h1>
+            <div class="setting_ondrop_block">
+
+            </div>
+
+            <div class="setting_elements">
+                <h1>Записи сегодня</h1>
+
+            </div>
         </div>
 
         <div class="setting_block_3" v-show="i == 3">
@@ -107,7 +114,10 @@ export default {
 
 .setting
     animation: 0.5s appearingBlock 
-    margin: 0 0 0 20px
+    padding-left: 00px
+    width: 85vw
+    margin-left: 15.7vw
+    margin-top: 70px
     h1
         font-style: normal
         font-weight: 600

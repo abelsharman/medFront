@@ -46,6 +46,8 @@ export default {
   height: 4.166666666666666VW;
   display: flex;
   transition: 0.5s all ease;
+  position: fixed;
+  z-index: 100;
   .cont1{
     width: 14.322916666666666VW;
     display: flex;

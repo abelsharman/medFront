@@ -3,7 +3,7 @@
     <Header></Header>
     <div class="flex">
       <SideBar></SideBar>
-
+      <Primary v-show="itemNav == 1"/>
       <Personal v-show="itemNav == 2"/>
       <Clients v-show="itemNav == 5" />
       <NewPersonal v-show="itemNav === 'new-personal'" />
@@ -21,6 +21,7 @@ import Personal from "@/components/Personal";
 import Clients from "@/components/Clients";
 import NewPersonal from "@/components/NewPersonal";
 import Settings from "@/components/Settings";
+import Primary from "@/components/Primary";
 
 
 export default {
@@ -31,7 +32,8 @@ export default {
     Personal,
     Clients,
     NewPersonal,
-    Settings
+    Settings,
+    Primary,
   },
   computed:{
     itemNav(){

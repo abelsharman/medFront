@@ -49,7 +49,10 @@ export default {
   padding-bottom: 53px
   width: 100%
   animation: 0.5s appearingBlock
-  margin-left: 20px
+  padding-left: 00px
+  width: 85vw
+  margin-left: 15.7vw
+  margin-top: 70px
   .pagename
     font-family: Proxima Nova, sans-serif
     font-style: normal

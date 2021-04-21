@@ -42,8 +42,10 @@ export default {
 .container
   padding-bottom: 53px
   width: 100%
-  margin-left: 20px
   animation: 0.5s appearingBlock
+  width: 85vw
+  margin-left: 15.7vw
+  margin-top: 70px
 
   .pagename
     font-family: Proxima Nova, sans-serif

@@ -111,8 +111,10 @@ export default {
   width: 14.322916666666666VW;
   display: flex;
   flex-flow: column;
-  height: 100vh;
+  height: calc(100vh - 60px - 3.6458333333333335VW);
   padding-top: 3.6458333333333335VW;
+  position: fixed;
+  top: 60px;
   filter: drop-shadow(3px 4px 25px rgba(0, 0, 0, 0.1));
   .item {
     font-family: Proxima Nova, sans-serif;
