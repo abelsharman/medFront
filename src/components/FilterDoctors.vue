@@ -121,7 +121,7 @@ export default {
     margin-top: 20px
   .type_of_p
     margin-top: 20px
-    .type_of_p_buttons
+
     .c_btn
       align-items: center
       font-weight: normal
